@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        jdk 'JDK17'
         sh 'mvn clean package -DskipTests=true'
         archiveArtifacts 'target/hello-demo-*.jar'
 
@@ -41,6 +40,7 @@ pipeline {
   }
   tools {
     maven 'M398'
+    jdk 'JDK17'
   }
 
 }
