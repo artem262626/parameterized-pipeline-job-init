@@ -1,4 +1,3 @@
-
 pipeline {
   agent any
   stages {
@@ -6,6 +5,8 @@ pipeline {
       steps {
         sh 'mvn clean package -DskipTests=true'
         archiveArtifacts 'target/hello-demo-*.jar'
+        jdk 'JDK17'
+
       }
     }
 
