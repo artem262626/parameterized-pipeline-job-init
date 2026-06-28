@@ -34,7 +34,6 @@ pipeline {
     stage('Integration Testing') {
       steps {
         sh "sleep ${params.SLEEP_TIME}"
-        sh "echo ${params.Result}"
         sh 'echo Testing using cURL commands......'
       }
     }
