@@ -31,13 +31,13 @@ pipeline {
       }
     }
     
-    //stage('Integration Testing') {
-      //steps {
-        //sh "sleep ${params.SLEEP_TIME}"
-        //sh 'echo Testing using cURL commands......'
-      //}
-    //}
-  //}
+    stage('Integration Testing') {
+      steps {
+        sh "sleep ${params.SLEEP_TIME}"
+        sh 'echo Testing using cURL commands......'
+      }
+    }
+  }
   tools {
     maven 'M398'
     jdk 'JDK21'
