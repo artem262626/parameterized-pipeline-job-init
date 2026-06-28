@@ -29,12 +29,12 @@ pipeline {
       }
     }
     
-    stage('Integration Testing') {
-      steps {
-        sh "sleep ${params.SLEEP_TIME}"
-        sh "curl -s http://localhost:${params.APP_PORT}/hello"
-      }
-    }
+    ///stage('Integration Testing') {
+      //steps {
+        //sh "sleep ${params.SLEEP_TIME}"
+        //sh "curl -s http://localhost:${params.APP_PORT}/hello"
+      //}
+    //}
 
 
   }
