@@ -40,7 +40,7 @@ pipeline {
   }
   tools {
     maven 'M398'
-    jdk 'JDK17'
+    jdk 'JDK21'
   }
 
 }
